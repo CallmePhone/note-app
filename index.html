@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Note App 📝</h1>
+        <textarea id="noteInput" placeholder="เพิ่มโน้ต..."></textarea>
+        <div class="controls">
+            <label for="fontSelect">เลือกฟอนต์:</label>
+            <select id="fontSelect">
+                <option value="'Arial', sans-serif">Arial</option>
+                <option value="'Courier New', monospace">Courier New</option>
+                <option value="'Georgia', serif">Georgia</option>
+                <option value="'Tahoma', sans-serif">Tahoma</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+                <option value="'Verdana', sans-serif">Verdana</option>
+            </select>
+            <label for="colorSelect">เลือกสี:</label>
+            <input type="color" id="colorSelect" value="#ffffff">
+            <label for="bgColorSelect">เลือกสีพื้นหลัง:</label>
+            <input type="color" id="bgColorSelect" value="#3E3E3E">
+        </div>
+        <button id="addNoteButton">เพิ่มโน้ต</button>
+        <input type="text" id="searchInput" placeholder="ค้นหาตามชื่อโน้ต..." />
+        <ul id="notesList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
